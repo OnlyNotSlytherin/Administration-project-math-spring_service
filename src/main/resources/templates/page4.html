@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>График функции</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url(photos/3.jpg); background-size: cover">
+
+<div class="container">
+    <div class="card p-3">
+        <div class="tabset">
+            <a href="http://localhost:8080"><button class="btn btn-lg btn btn-primary" onclick="window.location.src='http/localhost:8080/main'">Главная</button></a>
+            <input type="radio" name="tabset" id="tab1" aria-controls="z1" checked>
+            <a href="http://localhost:8080/page1">История математики</a>
+            <input type="radio" name="tabset" id="tab2" aria-controls="z2">
+            <a href="http://localhost:8080/page2">Квадратный корень</a>
+            <input type="radio" name="tabset" id="tab3" aria-controls="z3">
+            <a href="http://localhost:8080/page3">Теорема Пифагора</a>
+            <input type="radio" name="tabset" id="tab4" aria-controls="z4">
+            <a href="http://localhost:8080/page4">График функции</a>
+            <input type="radio" name="tabset" id="tab5" aria-controls="z5">
+            <a href="http://localhost:8080/page5">Арифм. прогрессия</a>
+
+
+            <div class="tab-panels">
+                <section id="z1" class="tab-panel">
+                    <div class="container">
+                        <div class="w-100">
+                            <h2>График функции</h2>
+
+                            <div style="text-align: center; padding: 20px;">
+                                <b>Гра́фик фу́нкции</b> — геометрическое понятие в математике, дающее представление о геометрическом образе функции.
+                                <p>Это геометрическое место точек плоскости, абсциссы <b><i>(x)</i></b> и ординаты <b><i>(y)</i></b>, которые связаны отображаемой функцией:
+                                    точка <b><i>(x,y)</i></b> располагается на графике функции <b><i>y=f(x)</i></b> тогда и только тогда, когда <b><i>y=f(x)</i></b>.</p>
+                            </div>
+
+                            <h2>Выберите график</h2>
+
+                            <ul class="img-list">
+                                <li data-toggle="modal" data-target="#g1" style="text-align: center; width:50%"><img src="photos/linf.jpg"><p><b>Линейная функция</b></p></li>
+                                <li data-toggle="modal" data-target="#g2" style="text-align: center; width:50%"><img src="photos/kvadr.png"><p><b>Квадратичная функция</b></p></li>
+                                <li data-toggle="modal" data-target="#g3" style="text-align: center; width:50%"><img src="photos/kub.png"><p><b>Кубическая функция</b></p></li>
+                                <li data-toggle="modal" data-target="#g4" style="text-align: center; width:50%"><img src="photos/mod.jpeg"><p><b>Функция с модулем</b></p></li>
+                            </ul>
+
+                            <div class="modal fade" id="g1" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Линейная функция</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div style="text-align: center; margin-bottom: 10px;">
+                                                <b>Линейной функцией</b> называется функция вида <b><i>y=kx+b</i></b>, где <b><i>x</i></b>-независимая переменная, <b><i>k</i></b> и <b><i>b</i></b>-любые числа.
+                                                <p>Графиком линейной функции является прямая.</p>
+
+                                                <img class="img8" src="photos/linf.jpg" style="max-height: 250px;">
+
+                                                <div style="padding: 20px;">
+                                                    Если <b class="kr">k<0</b> и <b class="kr">b>0</b>, то график функции <b><i>y=kx+b</i></b> имеет вид:
+                                                    <p><img class="img8" src="photos/lin1.gif"></p>
+                                                </div>
+
+                                                <div style="padding: 20px;">
+                                                    Если <b class="kr">k>0</b> и <b class="kr">b>0</b>, то график функции <b><i>y=kx+b</i></b> имеет вид:
+                                                    <p><img  class="img8" src="photos/lin2.gif"></p>
+                                                </div>
+
+                                                <div style="padding: 20px;">
+                                                    Если <b class="kr">k<0</b> и <b class="kr">b<0</b>, то график функции <b><i>y=kx+b</i></b> имеет вид:
+                                                    <p><img  class="img8" src="photos/lin3.gif"></p>
+                                                </div>
+
+                                                <div style="padding: 20px;">
+                                                    Если <b class="kr">k=0</b>, то график функция <b><i>y=kx+b</i></b> превращается в функцию <b><i>y=b</i></b> и ее график будет иметь вид:
+                                                    <p><img  class="img8" src="photos/lin4.gif"></p>
+                                                </div>
+
+                                                <div style="padding: 20px;">
+                                                    Если <b class="kr">b=0</b>, то график функция <b><i>y=kx</i></b> (прямая пропорциональность) проходит через начало координат:
+                                                    <p><img  class="img8" src="photos/lin5.gif"></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="modal fade" id="g2" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Квадратичная функция</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div style="text-align: center; margin-bottom: 10px;">
+                                                <b>Квадратичной функцией</b> называется функция вида <b><i>y=ax2+bx+c</i></b>, где <b><i>a,b,c</i></b> - числа, причем <b><i>a≠0</i></b>.
+                                                <p>Графиком квадратичной функции является парабола.</p>
+
+                                                <img class="img8" src="photos/kvadr.png" style="max-height: 250px;">
+
+                                                <div style="padding: 20px;">
+                                                    Чтобы построить график функции <b><i>y=x<sup>2</sup></i></b> составим таблицу значений:
+                                                    <p>
+                                                        <img class="img8" src="photos/kv.jpeg">
+                                                    </p>
+
+                                                    Построим график, используя полученные точки:
+                                                    <p>
+                                                        <img class="img8" src="photos/kv1.gif">
+                                                    </p>
+                                                </div>
+
+                                                <div style="padding: 20px;">
+                                                    График функции <b><i>y=-x<sup>2</sup></i></b> имеет вид:
+                                                    <p>
+                                                        <img class="img8" src="photos/kv2.jpeg">
+                                                    </p>
+
+                                                    Построим график, используя полученные точки:
+                                                    <p>
+                                                        <img class="img8" src="photos/kv3.gif">
+                                                    </p>
+                                                </div>
+
+                                                <div style="padding: 20px;">
+                                                    <b class="kr">Вывод:</b>
+                                                    Если старший коэффициент <b><i>a>0</i></b>, то <b>ветви</b> параболы напрaвлены <b>вверх</b>.
+                                                    Если старший коэффициент <b><i>a>0</i></b>, то <b>ветви</b> параболы напрaвлены <b>вниз</b>.
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="g3" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Кубическая функция</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div style="text-align: center; margin-bottom: 10px;">
+                                                <b>Кубическая функция</b> – это функция вида <b><i>y=x<sup>3</sup></b></i>.
+                                                <p>
+                                                    <img class="img8" src="photos/kub.png" style="max-height: 250px; margin-top: 20px;">
+                                                </p>
+
+                                                Построим график функции <b><i>y = x<sup>3</sup></i></b>. Составим таблицу соответственных значений <b><i>x</i></b> и <b><i>y</i></b>
+                                                <img class="img8" src="photos/kube.png">
+
+                                                <div style="margin-top: 20px;">
+                                                    Построим график, используя полученные точки:
+                                                    <p>
+                                                        <img class="img8" src="photos/kub2.gif">
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h5 style="text-align: center; margin-top: 20px;"><b>Cвойства функции</b></h5>
+                                                    <ul style="list-style: none;">
+                                                        <li>
+                                                            График функции неограниченно продолжается вверх справа от оси <b><i>y</i></b> и неограниченно продолжается вниз слева от оси <b><i>y</i></b>.
+                                                        </li>
+                                                        <p>
+                                                            <li>
+                                                                Если <b class="kr"><i>x = 0</i></b>, то <b class="kr"><i>y = 0</i></b>. То есть график функции проходит через <b>начало</b> координат
+                                                            </li>
+                                                        </p>
+                                                        <li>
+                                                            Если <b class="kr">x > 0<i></i></b>, то <b class="kr"><i>y > 0</i></b>, если <b class="kr"><i>x < 0</i></b>, то <b class="kr"><i>y < 0</i></b>.
+                                                            Так как куб положительного числа - <b>положительное число</b>, а куб отрицательного числа - <b>отрицательное число</b>. Значит крафик функции расположен в <b>первой</b> и <b>третьей</b>
+                                                            координатных четвертях.
+                                                        </li>
+                                                        <p>
+                                                            <li>
+                                                                Противоположным значениям <b><i>x</i></b> соответствует противоположные значения <b><i>y</i></b>.
+                                                                Это следует из того, что <b><i>(-x)<sup>3</sup>=-x<sup>3</sup></i></b> для любого значения <b><i>x</i></b>.
+                                                                Значит, <b>точки</b> графика, <b>имеющие противоположные абсциссы, симметричны относительно начала координат</b>.
+                                                            </li>
+                                                        </p>
+                                                    </ul>
+                                                </div>
+
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="g4" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Функция с модулем</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body" style="text-align: center; margin-bottom: 10px;">
+                                    Функция с модулем - функция вида <b><i>y=|x|</i></b>.
+                                    <p>
+                                        График функции на промежутке <b>[0;∞)</b> совпадает с графиком функции <b><i>у=х</i></b>, <br>
+                                        а на промежутке <b>(-∞;0]</b> – с графиком функции <b><i>у=-х</i></b>.
+                                    </p>
+                                    <img class="img8" src="photos/mod.jpeg" style="max-height: 250px;">
+
+                                    <div style="margin-top: 20px;">
+                                        Рассмотрим сначала простейший случай – функцию <b><i>y=|x|</i></b>.
+                                        <br>По определению модуля, имеем:
+                                        <img class="img8" style="margin-top: 10px;" src="photos/mod1.gif">
+                                    </div>
+
+                                    <div style="margin-top: 10px;">
+                                        Таким образом, для <b class="kr"><i>х ≥ 0</i></b> функция <b><i>y=|x|</i></b> совпадает с функцией <b><i>у=х</i></b>,
+                                        а для <b class="kr"><i>х < 0</i></b> - с функцией <b><i>у=-х</i></b>.
+                                        <br> Пользуясь этим разъяснением, легко построить график функции <b><i>y=|x|</i></b>
+                                        <br> Легко заметить, что этот график является объединением той части графика функции <b><i>у = х</i></b>,
+                                        которая лежит не ниже оси <b>Ox</b> и линии,
+                                        полученной зеркальным отражением относительно оси <b>Ox</b>, той его части, которая лежит ниже оси <b>Ox</b>.
+                                        <img class="img8" src="photos/mod2.png" style="width: 200px;">
+                                    </div>
+
+                                    <div>
+                                        <div style="margin-top: 10px; margin-top: 10px;" >
+                                            Этот способ пригоден и для построения графика функции <b><i>y=|kx+b|</i></b>
+                                            <img class="img8" src="photos/mod4.png" style="width: 200px;">
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теорема Пифагора</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url(../../../../../photos/3.jpg); background-size: cover">
+
+<div class="container">
+    <div class="card p-3">
+        <div class="tabset">
+            <a href="http://localhost:8080"><button class="btn btn-lg btn btn-primary" onclick="window.location.src='http/localhost:8080/main'">Главная</button></a>
+            <input type="radio" name="tabset" id="tab1" aria-controls="z1" checked>
+            <a href="http://localhost:8080/page1">История математики</a>
+            <input type="radio" name="tabset" id="tab2" aria-controls="z2">
+            <a href="http://localhost:8080/page2">Квадратный корень</a>
+            <input type="radio" name="tabset" id="tab3" aria-controls="z3">
+            <a href="http://localhost:8080/page3">Теорема Пифагора</a>
+            <input type="radio" name="tabset" id="tab4" aria-controls="z4">
+            <a href="http://localhost:8080/page4">График функции</a>
+            <input type="radio" name="tabset" id="tab5" aria-controls="z5">
+            <a href="http://localhost:8080/page5">Арифм. прогрессия</a>
+
+
+            <div class="tab-panels">
+                <section id="z2" class="tab-panel">
+                    <div class="container text-center">
+                        <h2 style="padding: 10px;">Теорема Пифагора</h2>
+                        <div>
+                            Математик Пифагор достиг больших успехов благодаря известной геометрической теоремы — теорема Пифагора.
+                        </div>
+
+                        <div>
+                            <p><b>В прямоугольном треугольнике квадрат гипотенузы равен сумме квадратов катетов <div
+                                    style="font-size: 25px;"> <i>c<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup></i></p></b>
+                        </div>
+                        <img src="https://ykl-res.azureedge.net/3c52af04-d843-4868-b19f-ba2966461912/Taisnl2.png"
+                             style="max-width: 300px;">
+                    </div>
+
+                    <div>
+                        <h2>Используйте формулу и решите тест:</h2>
+
+
+                        <form>
+                            <fieldset>
+                                <legend>В треугольнике ABC: ∠C = 90°, AB=8 и BC=5. Найдите квадрат AC?</legend>
+                                <label id="q11">
+                                    <input type="radio" name="q1" value="64" checked>
+                                    64
+                                </label>
+                                <br />
+                                <label id="q12">
+                                    <input type="radio" name="q1" value="26">
+                                    26
+                                </label>
+                                <br />
+                                <label id="q13">
+                                    <input type="radio" name="q1" value="39">
+                                    39
+                                </label>
+                                <br />
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Может ли прямоугольный треугольник иметь стороны: 3, 4, 5?</legend>
+                                <label id="q21">
+                                    <input type="radio" name="q2" value="да" checked>
+                                    да
+                                </label>
+                                <br />
+                                <label id="q22">
+                                    <input type="radio" name="q2" value="нет">
+                                    нет
+                                </label>
+                                <br />
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>В прямоугольном треугольнике ABC, ∠C = 90, и AC=8, BC=15. Найдите длину AB?</legend>
+                                <label id="q23">
+                                    <input type="radio" name="q3" value="17" checked>
+                                    17
+                                </label>
+                                <br />
+                                <label id="q24">
+                                    <input type="radio" name="q3" value="8">
+                                    8
+                                </label>
+                                <br />
+                                <label id="q25">
+                                    <input type="radio" name="q3" value="64">
+                                    64
+                                </label>
+                                <br />
+                            </fieldset>
+
+
+                            <button class="btn btn-primary" type="button" id="check">Проверить</button>
+                            <p id="result">
+
+                        </form>
+                    </div>
+
+            </div>
+            </section>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+<script>
+
+    $('#btn-bgcolor').on('click', function () {
+        var color = $('input[name="color"]').val();
+        $('body').css('backgroundColor', color);
+    });
+
+    $('#btn-color').on('click', function () {
+        var color = $('#color').val();
+        $('body').css('color', color);
+    })
+
+    $('#check').on('click', function () {
+        var v1 = $('input[name="q1"]:checked').val();
+        var v2 = $('input[name="q2"]:checked').val();
+        var v3 = $('input[name="q3"]').val();
+        var result = 0;
+
+        if (v1 == 39) {
+            $('#q13').css('color', 'green');
+            result++;
+        } else {
+            $('#q13').css('color', 'green');
+            $('#q11').css('color', 'red');
+            $('#q12').css('color', 'red');
+        }
+
+        if (v2 == 'да') {
+            $('#q21').css('color', 'green');
+            result++;
+        } else {
+            $('#q21').css('color', 'green');
+            $('#q22').css('color', 'red');
+        }
+
+        if (v3 == 17) {
+            $('#q23').css('color', 'green');
+            result++;
+        } else {
+            $('#q23').css('color', 'green');
+            $('#q24').css('color', 'red');
+            $('#q25').css('color', 'red');
+        }
+
+        $('#result').empty();
+        if (result < 3) {
+            $('#result').css('color', 'red');
+            $('#result').append(`Ваш результат: ${result} правильных ответов из 3. Это плохой результат, попробуйте еще раз! `);
+        } else {
+            $('#result').css('color', 'green');
+            $('#result').append(`Ваш результат: ${result} правильных ответов из 3. Отлично, вы - гений! `);
+        }
+
+    });
+
+
+</script>
+
+
+</body>
+
+</html>

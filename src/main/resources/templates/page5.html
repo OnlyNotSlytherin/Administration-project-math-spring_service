@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Арифметическая прогрессия</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url(photos/3.jpg); background-size: cover">
+
+<div class="container">
+  <div class="card p-3">
+    <div class="tabset">
+      <a href="http://localhost:8080"><button class="btn btn-lg btn btn-primary" onclick="window.location.src='http/localhost:8080/main'">Главная</button></a>
+      <input type="radio" name="tabset" id="tab1" aria-controls="z1" checked>
+      <a href="http://localhost:8080/page1">История математики</a>
+      <input type="radio" name="tabset" id="tab2" aria-controls="z2">
+      <a href="http://localhost:8080/page2">Квадратный корень</a>
+      <input type="radio" name="tabset" id="tab3" aria-controls="z3">
+      <a href="http://localhost:8080/page3">Теорема Пифагора</a>
+      <input type="radio" name="tabset" id="tab4" aria-controls="z4">
+      <a href="http://localhost:8080/page4">График функции</a>
+      <input type="radio" name="tabset" id="tab5" aria-controls="z5">
+      <a href="http://localhost:8080/page5">Арифм. прогрессия</a>
+
+
+      <div class="tab-panels">
+        <section id="z1" class="tab-panel">
+          <div class="container">
+            <div class="w-100">
+              <h2>Арифметическая прогрессия</h2>
+              <p>
+              <div style="text-align: center;">
+                <b>Арифмети́ческая прогре́ссия</b> — числовая последовательность вида
+                <p class="p1" style="margin-top: 20px;">
+                  <b><i>a</i></b><sub>1</sub>, &nbsp;
+                  <b><i>a</i></b><sub>1</sub>+<b><i>d</i></b>, &nbsp;
+                  <b><i>a</i></b><sub>1</sub>+2<b><i>d</i></b>, &nbsp;
+                  <b>...</b>, &nbsp;
+                  <b><i>a</i></b><sub>1</sub>+(<b><i>n</i></b>-1)<b><i>d</i></b>, &nbsp;
+                  <b>...</b>
+                </p>
+
+                <p>
+                  то есть последовательность чисел (<b>членов прогрессии</b>),
+                  в которой каждое число, начиная со второго,
+                  получается из предыдущего добавлением к нему
+                  постоянного числа <b><i>d</i></b> (<b>шага</b>, или <b>разности</b> прогрессии):
+                </p>
+
+                <p class="p1">
+                  <b><i>a<sub>n</sub></i></b> = <b><i>a</i><sub><i>n</i>-1</sub></b> + <b><i>d</i></b>
+                </p>
+
+                <p>
+                  Любой (<b><i>n-й</i></b>) член прогрессии может быть вычислен по формуле общего члена:
+                </p>
+
+                <p class="p1">
+                  <b><i>a<sub>n</sub></i></b> =
+                  <b><i>a</i><sub>1</sub></b> +
+                  <b>(<i>n</i> - 1)<i>d</i></b>
+                </p>
+              </div>
+              </p>
+
+            </div>
+
+
+
+            <div class="row" style="padding: 20px; display: inline;">
+
+              <ul class="aaa">
+                <li data-toggle="modal" data-target="#a1">
+                  <div class="col-md-12">
+                    <div class="card card-4">
+                      <h5>Числовая последовательность</h5>
+                    </div>
+                  </div>
+                </li>
+
+                <li data-toggle="modal" data-target="#a2">
+                  <div class="col-md-12">
+                    <div class="card card-4">
+                      <h5>Арифметическая прогрессия</h5>
+                    </div>
+                  </div>
+                </li>
+
+                <li data-toggle="modal" data-target="#a3">
+                  <div class="col-md-12">
+                    <div class="card card-4">
+                      <h5>Формулы арифметической прогрессии</h5>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="row mt-5">
+                <div class="col-md-12">
+                  <h2>Вычислить арифметическую прогрессию</h2>
+                  <form class=" pt-4" style="text-align: center;">
+                    <label for="start">
+                      Стартовое число
+                      <input type="number" name="start" class="form-control" value="1" />
+                    </label>
+                    <label for="">
+                      Шаг приращения
+                      <input type="number" name="step" class="form-control" value="1" />
+                    </label>
+                    <label for="">
+                      Количество чисел в последовательности
+                      <input type="number" name="count" class="form-control" value="1" />
+                    </label>
+                    <button type="button" id="arifm_progr" class="btn btn-primary">Вывести последовательность</button>
+                  </form>
+                </div>
+                <div class="col-md-12" id="arifm_progr_result">
+                </div>
+              </div>
+
+
+              <div class="modal fade" id="a1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Числовая последовательность</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                      Итак, сядем и начнем писать какие-нибудь числа.
+                      <p>
+                        Например: <b class="p1">4, 7, -8, 13, -5, -6, 0, ...</b>
+                      </p>
+
+                      <p>
+                        Писать можно любые числа, и их может быть сколько угодно (в нашем случае их 7).
+                        Сколько бы чисел мы не написали, мы всегда можем сказать,
+                        какое из них первое, какое – второе и так далее до последнего, то есть,
+                        можем их пронумеровать. Это и есть пример <b>числовой последовательности</b>.
+                      </p>
+
+                      <p>
+                        <b>Числовая последовательность</b> – это множество чисел,
+                        каждому из которых можно присвоить уникальный номер.
+                        Например, для нашей последовательности:
+                        <img src="photos/posl.png" style="width: 70%; margin-top: 10px">
+                      </p>
+
+                      <p>
+                        Присвоенный номер характерен только для одного числа последовательности.
+                        Иными словами, в последовательности нет трех вторых чисел.
+                        Второе число (как и <b><i>n-ное</i></b> число) всегда одно.
+                        Число с номером <b><i>n</i></b> называется <b><i>n-ным</i></b> членом последовательности.
+                      </p>
+
+                      <p>
+                        Всю последовательность мы обычно называем какой-нибудь буквой (например, <b><i>a</i></b>),
+                        и каждый член этой последовательности – той же буквой с индексом, равным номеру этого члена:
+                        <br><b><i>a</i><sub>1</sub></b>, <b><i>a</i><sub>2</sub></b>, <b>...</b>,
+                        <b><i>a</i><sub>10</sub></b>, <b>...</b>, <b><i>a</i><sub>n</sub></b>
+                        <br><img style="max-height: 200px; width: 70%;" class="p1" src="photos/posl1.png">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="modal fade" id="a2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Аримфетическая прогрессия</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                      Допустим, у нас есть числовая последовательность,
+                      в которой разница между соседствующими числами одинакова и равна <b><i>d</i></b>.
+                      Например:
+                      <p>
+                        <img class="p1" src="photos/arif.png" style="width: 70%;">
+                      <div style="font-size: 16px;">
+                        <br><b><i>a</i><sub>1</sub></b> = 3
+                        <br><b><i>a</i><sub>2</sub></b> = 3 + <b><i>d</i></b> ⇒ <b><i>d</i></b> = 7 - 3 = 4
+                        <br><b><i>a</i><sub>3</sub></b> = 7 + 4 = 11
+                        <br>Такая числовая последовательность называется <b>арифметической прогрессией</b>.
+                        <br>
+                        <b>Арифметическая прогрессия</b> – это числовая последовательность,
+                        каждый член которой равен предыдущему,
+                        сложенному с одним и тем же числом.
+                        Это число называется разностью арифметической прогрессии и обозначается <b><i>d</i></b>.
+                      </div>
+                      </p>
+
+                      <p>
+                      <h5 style="font-size: 16px;"><b>Уравнение арифметической прогрессии:</b></h5>
+                      <p class="p1">
+                        <b><i>a<sub>n</sub></i></b> =
+                        <b><i>a</i><sub>1</sub></b> +
+                        <b>(<i>n</i> - 1)<i>d</i></b>
+                      </p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="modal fade" id="a3" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Формулы арифметической прогрессии</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                      <b>Формула нахождения <i>n-го</i> члена арифметической прогрессии:</b>
+                      <p class="p1" style="padding: 10px;">
+                        <i>a<sub>n</sub></i> = <i>a</i><sub>1</sub> + <i>d</i>(<i>n</i> − 1)<i>a</i>
+                      </p>
+
+                      <br><b>Свойство членов арифметической прогрессии:</b>
+                      <p>
+                        <img class="img8" src="photos/progr.png">
+                      </p>
+
+                      <br><b>Суммa членов арифметической прогрессии:</b>
+                      <div>
+                        <div style="padding: 10px;">
+                          <img style="display: inline;" src="photos/progr1.png">
+                          <img style="margin-left: 20px; width: 180px;" src="photos/progr2.png">
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+    </section>
+  </div>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

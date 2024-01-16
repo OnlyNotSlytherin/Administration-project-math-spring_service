@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История математики</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url(photos/3.jpg); background-size: cover">
+
+<div class="container">
+    <div class="card p-3">
+        <div class="tabset">
+            <a href="http://localhost:8080"><button class="btn btn-lg btn btn-primary" onclick="window.location.src='http/localhost:8080/main'">Главная</button></a>
+            <input type="radio" name="tabset" id="tab1" aria-controls="z1" checked>
+            <a href="http://localhost:8080/page1">История математики</a>
+            <input type="radio" name="tabset" id="tab2" aria-controls="z2">
+            <a href="http://localhost:8080/page2">Квадратный корень</a>
+            <input type="radio" name="tabset" id="tab3" aria-controls="z3">
+            <a href="http://localhost:8080/page3">Теорема Пифагора</a>
+            <input type="radio" name="tabset" id="tab4" aria-controls="z4">
+            <a href="http://localhost:8080/page4">График функции</a>
+            <input type="radio" name="tabset" id="tab5" aria-controls="z5">
+            <a href="http://localhost:8080/page5">Арифм. прогрессия</a>
+
+
+            <div class="tab-panels">
+                <section id="z1" class="tab-panel">
+                    <div class="container">
+                        <div class="w-100">
+                            <h2>История математики</h2>
+                            <p>
+                            <p>Зародилась математика в древнейшие времена. В те доисторические времена человек активно осваивал
+                                окружающий мир, накапливал фактический материала и преумножал жизненный опыт. Долгое время счет у
+                                древних людей был вещественным, то есть осуществлялся с помощью палочек, камней, пальцев и прочего.
+                                Постепенно к первобытному человеку пришло понимание того, что число можно отделить от его
+                                конкретного представителя. Древние люди сумели понять, что два яблока и два камня, несмотря на все
+                                их различия, имеют что-то общее, а именно занимают обе руки одного человека. Так постепенно
+                                сформировалось понятие о натуральных числах, а к концу VII V вв. до н. э. и другие основные
+                                постулаты математики.</p>
+                            <p>Бурное развитие математической науки обусловлено потребностями хозяйственной жизни человека.
+                                Земледелие, ремесло, обмен, торговля, налоги, обеспечение продовольствием, создание армии, измерение
+                                площадей земельных владений, объемов сосудов и многое другое заставляло людей заниматься счетом и
+                                вычислением. Со временем накопленные знания были приведены в четкую систему, благодаря чему человек
+                                смог вычленить особые понятия, методы и способы решения трудных задач, которые впоследствии легли в
+                                основу современной математической науки.</p>
+                            <p>В следствие изучения форм изделий и предметов, зданий и земельных участков и т.д. люди сформировали
+                                понятие геометрической фигуры, являющейся частью геометрического (буквально означает — измерение
+                                земли) пространства, сформированные абстрактные понятия были введены в арифметические действия над
+                                натуральными числами. Спустя некоторое время была установлена связь между натуральными числами и
+                                величинами, в результате чего появились дробные числа. Они получались в случае, когда результат
+                                измерений не выражался натуральным числом. Постепенно путем наблюдений и простейших логических
+                                рассуждений, люди пришли к простым, но гениальным по своей сути формулам для вычисления
+                                геометрических величин — длин, площадей, объемов. Из этого следует, что в это время арифметика и
+                                геометрия считались частями одного целого.</p>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card card-1">
+                                    <h3>Евклид </h3>
+                                    <p><b>Считается отцом геометрии, а его великий труд Элементы - одной из самых великих работ по
+                                        математике в истории. Евклид доказал... <img src="photos/evclid.png"> </b>
+                                        <a href="#" data-toggle="modal" data-target="#m2">Подробнее</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-2">
+                                    <h3>Пифагор</h3>
+
+                                    <p>
+                                        <b>Греческий математик Пифагор считается одним из самых великих. Его имя упоминается в связи с
+                                            известной теоремой в тригонометрии... <img src="photos/pifagor.png"></b>
+                                        <a href="#" data-toggle="modal" data-target="#m1">Подробнее</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-3">
+                                    <h3>Исаак Ньютон</h3>
+                                    <p><b>В равной степени этот великий ученый внес свою лепту в развитие математической науки. Он
+                                        создал современный математический анализ... <img src="photos/isaak.png"></b>
+                                        <a href="#" data-toggle="modal" data-target="#m3">Подробнее</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Пифагор</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <b>Пифагор Самосский</b> — древнегреческий <b>философ</b>, <b>математик</b> и <b>мистик</b>,
+                                        создатель <b>религиозно-философской</b> школы <b>пифагорейцев</b>.
+                                        Пифагор проповедовал <b>метемпсихоз</b> (учение о переселении душ), вегетарианство, гармонию сфер
+                                        и др. Власть некоего тайного общества пифагорейцев вызывала недовольство. Оно вылилось в заговор
+                                        <b>Килона</b>, который вместе со сторонниками напал на собрание пифагорейцев. Существует несколько
+                                        легенд относительно дальнейшей судьбы Пифагора. Большинство из них завершаются тем, что философ
+                                        умер в храме <b>муз Метапонта</b>. Несмотря на смерть Пифагора и разгром общества в Кротоне
+                                        пифагореисты продолжили свою деятельность в других полисах античного мира.
+                                        <p>Пифагор не оставил сочинений, в связи с чем точная реконструкция его первоначального учения, а
+                                            также отделение от более поздних напластований весьма затруднительна. <b>Пифагору приписывали
+                                                все открытия пифагореистов</b>. Вне зависимости от авторства тех или иных утверждений учение
+                                            Пифагора стало основой для открытий в области математики, астрономии, теории музыки. Пифагореизм
+                                            оказал воздействие на философию <b>Платона</b>, а через <b>платонизм</b> на философию Нового и
+                                            Новейшего времени. О влиянии учения Пифагора на развитие науки и их собственные открытия
+                                            говорили среди прочих <b>Николай Коперник</b>, <b> Иоганн Кеплер</b>, <b>Исаак Ньютон</b> и
+                                            <b>Альберт Эйнштейн</b>.</p>
+
+                                        <img class="img9" src="photos/pifagor.png" alt="" style="max-width: 300px;">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="modal fade" id="m2" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Евклид</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div><b>Евкли́д</b> — древнегреческий математик, автор первого из дошедших до нас теоретических
+                                            трактатов по математике. Биографические сведения о Евклиде крайне скудны. Достоверным можно
+                                            считать лишь то, что его научная деятельность протекала в Александрии в III веке до н. э.
+                                            Он <b>первый математик</b> Александрийской школы. Его главная работа <b>«Начала»</b> содержит
+                                            изложение <b>планиметрии</b>, <b>стереометрии</b> и <b>ряда вопросов теории чисел</b>; в ней он
+                                            подвёл итог предшествующему развитию <b>древнегреческой математики</b> и создал фундамент
+                                            дальнейшего развития математики. Из других его сочинений по математике надо отметить <b>«О
+                                                делении фигур»</b>, сохранившееся в арабском переводе, 4 книги <b>«Конические сечения»</b>,
+                                            материал которых вошёл в произведение того же названия Аполлония Пергского.</div>
+
+                                        <img class="img8" src="photos/evclid.png" alt="" style="max-width: 300px;">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="m3" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Исаак Ньютон</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div><b>Исаа́к Нью́то́н</b> — <b>английский физик</b>, <b>математик</b>, <b>механик</b> и
+                                            <b>астроном</b>, один из создателей классической физики. Автор фундаментального труда <b>
+                                                «Математические начала натуральной философии» </b>, в котором он изложил <b>закон всемирного
+                                                тяготения и три закона механики</b>, ставшие основой <b>классической механики</b>. Разработал
+                                            <b>дифференциальное и интегральное исчисления</b>, теорию <b>цвета</b>, заложил основы
+                                            современной <b>физической оптики</b>, создал многие другие <b>математические и физические
+                                                теории</b>.</div>
+                                        <img class="img9" src="photos/isaak.png" alt="" style="max-width: 300px;">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

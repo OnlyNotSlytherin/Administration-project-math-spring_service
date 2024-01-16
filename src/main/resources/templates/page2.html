@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квадратный корень</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url(photos/3.jpg); background-size: cover">
+
+<div class="container">
+    <div class="card p-3">
+        <div class="tabset">
+            <a href="http://localhost:8080"><button class="btn btn-lg btn btn-primary" onclick="window.location.src='http/localhost:8080/main'">Главная</button></a>
+            <input type="radio" name="tabset" id="tab1" aria-controls="z1" checked>
+            <a href="http://localhost:8080/page1">История математики</a>
+            <input type="radio" name="tabset" id="tab2" aria-controls="z2">
+            <a href="http://localhost:8080/page2">Квадратный корень</a>
+            <input type="radio" name="tabset" id="tab3" aria-controls="z3">
+            <a href="http://localhost:8080/page3">Теорема Пифагора</a>
+            <input type="radio" name="tabset" id="tab4" aria-controls="z4">
+            <a href="http://localhost:8080/page4">График функции</a>
+            <input type="radio" name="tabset" id="tab5" aria-controls="z5">
+            <a href="http://localhost:8080/page5">Арифм. прогрессия</a>
+
+
+
+            <div class="tab-panels">
+                <section id="z2" class="tab-panel">
+                    <div class="container">
+                        <h2>Квадратный корень</h2>
+                        <div class="row">
+                            <p>
+                            <div class="p"><b>Квадратным корнем (арифметическим квадратным корнем)</b>
+                                из неотрицательного числа a называется такое <b>неотрицательное
+                                    число, квадрат которого равен</b> <i>a</i>.
+                                <div class="p1"><br><i>√a=x, x<sup>2</sup>=a; <b>где</b> x≥0, a≥0</i></div>
+                            </div>
+                            </p>
+
+                            <ul class="img-list ">
+                                <li data-toggle="modal" data-target="#m1"><img style="width:100%;" src="photos/form1.jpg" ></li>
+                                <li data-toggle="modal" data-target="#modal2"><img src="photos/form2.png"></li>
+                                <li data-toggle="modal" data-target="#m3"><img src="photos/form3.png"></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Вычислить квадратный корень</h2>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-3">
+                                <input type="number" class="form-control" min="0" step="0.1" id="number">
+
+                                <div>
+                                    <strong>Результат:</strong>
+                                    <span id="sqrt-result"></span>
+                                    <span id="sqrt-error" class="text-danger"></span>
+                                </div>
+
+                            </div>
+                            <div class="col-md-2">
+                                <button id="sqrt-btn" class="btn btn-primary">Вычислить</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Карточка с формулами №1</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img8" src="photos/form1.jpg" style="max-height: 300px;">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Карточка с формулами №2</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img8" src="photos/form2.png" style="max-height: 300px;">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="m3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Карточка с формулами №3</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img8" src="photos/form3.png" style="max-width: 300px;">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+<script>
+    $('#sqrt-btn').on('click', function () {
+        var number = $('#number').val();
+        if (number > 0) {
+            $('#sqrt-result').empty();
+            $('#sqrt-error').empty();
+            $('#sqrt-result').append(Math.sqrt(number));
+        } else {
+            $('#sqrt-error').empty();
+            $('#sqrt-result').empty();
+            $('#sqrt-error').append("Ошибка! Введите положительное число");
+        }
+    });
+</script>
+
+
+
+</body>
+
+</html>
